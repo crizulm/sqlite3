@@ -16,7 +16,7 @@ Antes de comenzar a trabajar con SQLite vamos a mencionar lo que debemos tener i
  - [**SQLite:**](https://www.sqlite.org/download.html) Es nuestro sistema de gestion de base de datos que mencionamos anteriormente.
  - [**JDBC (Java Database Conectivity):**](https://github.com/crizulm/sqlite3/blob/master/download/sqlite-jdbc-3.20.0.jar.zip) Es una API que permite la ejecución de operaciones sobre nuestra base de datos desde Java, es la que ira a "hablar" con nuestra base de datos.
 
-Para descargar estas herramientas simplemente basta hacer click encima del titulo de cada una, o en caso contrario hacer [click aqui](/download) para ver todos las descargas.
+Para descargar estas herramientas simplemente basta hacer click encima del titulo de cada una, o en caso contrario hacer [click aqui](https://github.com/crizulm/sqlite3/blob/master/download) para ver todos las descargas.
 
 > **Aclaración:** Todas estas herramientas ya se encuentran instaladas en las maquinas del laboratorio que iremos a desarollar esta guia.
 
