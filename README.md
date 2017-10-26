@@ -14,7 +14,7 @@ Antes de comenzar a trabajar con SQLite vamos a mencionar lo que debemos tener i
 
  - [**Netbeans IDE:**](https://netbeans.org/downloads/index.html) Como ya se sabe, Netbeans es un entorno de desarollo que nos facilita la ejecucion, depuracion, y escritura de nuestro codigo.
  - [**SQLite:**](https://www.sqlite.org/download.html) Es nuestro sistema de gestion de base de datos que mencionamos anteriormente.
- - [**JDBC (Java Database Conectivity):**](/download/sqlite-jdbc-3.20.0.jar.zip) Es una API que permite la ejecución de operaciones sobre nuestra base de datos desde Java, es la que ira a "hablar" con nuestra base de datos.
+ - [**JDBC (Java Database Conectivity):**](https://github.com/crizulm/sqlite3/blob/master/download/sqlite-jdbc-3.20.0.jar.zip) Es una API que permite la ejecución de operaciones sobre nuestra base de datos desde Java, es la que ira a "hablar" con nuestra base de datos.
 
 Para descargar estas herramientas simplemente basta hacer click encima del titulo de cada una, o en caso contrario hacer [click aqui](/download) para ver todos las descargas.
 
@@ -22,7 +22,7 @@ Para descargar estas herramientas simplemente basta hacer click encima del titul
 
 ## ¿Como iremos a trabajar?
 
-![](img/arq.png)
+![](https://github.com/crizulm/sqlite3/blob/master/img/arq.png)
 
 Como se puede ver en la imagen superior, la arquitectura sobre la cual estaremos trabajando, nuestra aplicacion **Java** intercambia mensajes con **JDBC**, y este le envia nuestros mensajes a nuestra base de datos **SQLite**.
 
@@ -100,7 +100,7 @@ Como dijimos para que nuestra aplicacion Java se conecte con nuestra base de dat
 3. Dentro del Netbeans con hacemos click derecho sobre Libraries clickeamos encima de **"Add JAR/Folder"**.
 4. Seleccionamos nuestro archivo **"sqlite-jdbc-[****].jar"** que copiamos en nuestro directorio.
 
-![](img/libraryScren.png)
+![](https://github.com/crizulm/sqlite3/blob/master/img/libraryScren.png)
 
 Listo :+1:, en nuestro proyecto deberia aparecer la libreria que acabamos de agregar como se muestra arriba.
 
