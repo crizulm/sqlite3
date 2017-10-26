@@ -286,6 +286,6 @@ Si tienes preguntas sobre éste tema, no dudes en mandarme un correo electrónic
 
 ### Referencias
 
-1. http://github.com/crizulm/sqlite
+1. http://github.com/crizulm/sqlite3
 2. https://www.sqlite.org/docs.html
 3. https://docs.oracle.com/javase/tutorial/jdbc/overview/index.html
