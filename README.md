@@ -13,7 +13,7 @@ Asi que a continuacion iremos a desarollar una guia de como instalar nuestra bas
 Antes de comenzar a trabajar con SQLite vamos a mencionar lo que debemos tener instalado en nuestra maquina, y explicar que funcion cumple cada uno de estos.
 
  - [**Netbeans IDE:**](https://netbeans.org/downloads/index.html) Como ya se sabe, Netbeans es un entorno de desarollo que nos facilita la ejecucion, depuracion, y escritura de nuestro codigo.
- - [**SQLite:**](https://www.sqlite.org/download.html) Es nuestro sistema de gestion de base de datos que mencionamos anteriormente.
+ - [**SQLite:**](https://github.com/crizulm/sqlite3/blob/master/download/sqlite.zip) Es nuestro sistema de gestion de base de datos que mencionamos anteriormente.
  - [**JDBC (Java Database Conectivity):**](https://github.com/crizulm/sqlite3/blob/master/download/sqlite-jdbc-3.20.0.jar.zip) Es una API que permite la ejecución de operaciones sobre nuestra base de datos desde Java, es la que ira a "hablar" con nuestra base de datos.
 
 Para descargar estas herramientas simplemente basta hacer click encima del titulo de cada una, o en caso contrario hacer [click aqui](https://github.com/crizulm/sqlite3/blob/master/download) para ver todos las descargas.
