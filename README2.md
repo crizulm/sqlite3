@@ -4,19 +4,19 @@
 
 DB Browser para SQLite es un software open source que nos permite crear, diseñar y editar archivos .db de SQLite.
 
-Así que a continuación iremos a desarollar una guia de como utilizar este software para explorar la base de datos que creamos anteriormente.
+Así que a continuación iremos a desarrollar una guía de como utilizar este software para explorar la base de datos que creamos anteriormente.
 
 ## ¿Que necesitamos para trabajar?
 
  - [**DBBrowser**](http://sqlitebrowser.org)
 
-Para descargar esta herramienta simplemente basta hacer clic encima del titulo, en la pagina oficial del desarollador se encuentran todas las versiones tanto para Windows, Mac OS X, como Linux o en caso contrario hacer [click aquí](./download) para ver todos las descargas.
+Para descargar esta herramienta simplemente basta hacer clic encima del titulo, en la pagina oficial del desarrollador se encuentran todas las versiones tanto para Windows, Mac OS X, como Linux o en caso contrario hacer [click aquí](./download) para ver todos las descargas.
 
 > **Aclaración:** Todas estas herramientas ya se encuentran instaladas en las maquinas del laboratorio que iremos a desarrollar esta guía.
 
 ## Comienzo de la guía de trabajo
 
-Antes que nada debemos ejecutar la aplicacion, y nos encontraremos con una interfaz similar a la siguiente:
+Antes que nada debemos ejecutar la aplicación, y nos encontraremos con una interfaz similar a la siguiente:
 
 ![](./img/db-browser.png)
 
@@ -31,34 +31,34 @@ Para ello debemos dirigirnos a la pestaña <kbd>Browse Data</kbd>.
 
 ![](./img/db-browser-browse-data.png)
 
-Deberiamos ver una ventana similar a la anterior, en esta ventana podremos agregar, editar, y borrar filas de nuestra tabla manualmente; a continuación vamos a explicar como realizar cada una de estas acciones.
+Deberíamos ver una ventana similar a la anterior, en esta ventana podremos agregar, editar, y borrar filas de nuestra tabla manualmente; a continuación vamos a explicar como realizar cada una de estas acciones.
 
 ### Editando filas
 
 ![](./img/dbbrowser-edit-1.png)
 
-Como se puede ver al hacer click sobre el nombre de la fila 1, en la parte izquierda de DBBrowser nos aparecio un campo de texto con el valor actual que tiene esta columna, para cambiarlo simplemente debemos escribir el nuevo valor que quieramos que tome y apretar el boton <kbd>Apply</kbd>.
+Como se puede ver al hacer click sobre el nombre de la fila 1, en la parte izquierda de DBBrowser nos apareció un campo de texto con el valor actual que tiene esta columna, para cambiarlo simplemente debemos escribir el nuevo valor que quiéramos que tome y apretar el botón <kbd>Apply</kbd>.
 
 ![](./img/dbbrowser-edit-2.png)
 
-Para guardar estos cambios que realizamos debemos clickear sobre el boton <kbd>Write Changes</kbd> que se encuentra en la esquina superior izquierda.
+Para guardar estos cambios que realizamos debemos clickear sobre el botón <kbd>Write Changes</kbd> que se encuentra en la esquina superior izquierda.
 
 ### Agregando filas
-Para agregar una nueva fila debemos clickear sobre el boton <kbd>New Record</kbd>, donde nos despliega una nueva fila vacia, aqui debemos completar cada una de las columnas de esta fila de la forma que lo hicimos anteriormente editando una fila cualquiera.
+Para agregar una nueva fila debemos clickear sobre el botón <kbd>New Record</kbd>, donde nos despliega una nueva fila vacía, aquí debemos completar cada una de las columnas de esta fila de la forma que lo hicimos anteriormente editando una fila cualquiera.
 
 ![](./img/dbbrowser-add.png)
 
-Por ultimo igualmente que como cuando editamos una fila debemos clickear el boton <kbd>Write Changes</kbd> para guardar los cambios.
+Por ultimo igualmente que como cuando editamos una fila debemos clickear el botón <kbd>Write Changes</kbd> para guardar los cambios.
 
 ### Borrando filas
 Para borrar una nueva fila debemos seleccionar la fila que queremos eliminar, y luego clickear sobre el boton <kbd>Delete Record</kbd> que se encuentra en la esquina superior izquierda.
 
 ![](./img/dbbrowser-delete.png)
 
-Al igual que todos los demas casos debemos clickear el boton <kbd>Write Changes</kbd>
+Al igual que todos los demás casos debemos clickear el botón <kbd>Write Changes</kbd>
 
 ## Autoría
-**Autor:** Matias Crizul
+**Autor:** Matías Crizul
 
 **E-mail:** crizulm@gmail.com
 
