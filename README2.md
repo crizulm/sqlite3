@@ -35,18 +35,18 @@ Deberiamos ver una ventana similar a la anterior, en esta ventana podremos agreg
 
 ### Editando filas
 
-![](./img/dbbrowser-edit-1.jpg)
+![](./img/dbbrowser-edit-1.png)
 
 Como se puede ver al hacer click sobre el nombre de la fila 1, en la parte izquierda de DBBrowser nos aparecio un campo de texto con el valor actual que tiene esta columna, para cambiarlo simplemente debemos escribir el nuevo valor que quieramos que tome y apretar el boton <kbd>Apply</kbd>.
 
-![](./img/dbbrowser-edit-2.jpg)
+![](./img/dbbrowser-edit-2.png)
 
 Para guardar estos cambios que realizamos debemos clickear sobre el boton <kbd>Write Changes</kbd> que se encuentra en la esquina superior izquierda.
 
 ### Agregando filas
 Para agregar una nueva fila debemos clickear sobre el boton <kbd>New Record</kbd>, donde nos despliega una nueva fila vacia, aqui debemos completar cada una de las columnas de esta fila de la forma que lo hicimos anteriormente editando una fila cualquiera.
 
-![](./img/dbbrowser-add.jpg)
+![](./img/dbbrowser-add.png)
 
 Por ultimo igualmente que como cuando editamos una fila debemos clickear el boton <kbd>Write Changes</kbd> para guardar los cambios.
 
