@@ -2,40 +2,40 @@
 
 ## ¿Que es SQLite?
 
-SQLite es un sistema de gestión de bases de datos relacional, contenida en una relativamente pequeña biblioteca escrita en C. Como ya se menciono anteriormente en la presentación la principal ventaja de este motor de base de datos es que no tenemos la necesidad de hacer uso de servidores locales o externos que gestiónan el contenido de esta.
+SQLite es un sistema de gestión de bases de datos relacional, contenida en una relativamente pequeña biblioteca escrita en C. Como ya se menciono anteriormente en la presentación la principal ventaja de este motor de base de datos es que no tenemos la necesidad de hacer uso de servidores locales o externos que gestionan el contenido de esta.
 
-Nuestra base de datos SQLite se gestiona en un archivo donde tenemos todos nuestros datos. Asi que simplemente con copiar este archivo en otra maquina tendremos acceso a nuestros datos, sin tener la necesidad de tener implantado un servidor de acceso a estos datos.
+Nuestra base de datos SQLite se gestiona en un archivo donde tenemos todos nuestros datos. Así que simplemente con copiar este archivo en otra maquina tendremos acceso a nuestros datos, sin tener la necesidad de tener implantado un servidor de acceso a estos datos.
 
-Asi que a continuacion iremos a desarollar una guia de como instalar nuestra base de datos, conectarnos, realizar consultas, y demas.
+Así que a continuación iremos a desarrollar una guía de como instalar nuestra base de datos, conectarnos, realizar consultas, y demás.
 
 ## ¿Que necesitamos para trabajar?
 
-Antes de comenzar a trabajar con SQLite vamos a mencionar lo que debemos tener instalado en nuestra maquina, y explicar que funcion cumple cada uno de estos.
+Antes de comenzar a trabajar con SQLite vamos a mencionar lo que debemos tener instalado en nuestra maquina, y explicar que función cumple cada uno de estos.
 
- - [**Netbeans IDE:**](https://netbeans.org/downloads/index.html) Como ya se sabe, Netbeans es un entorno de desarollo que nos facilita la ejecucion, depuracion, y escritura de nuestro codigo.
- - [**SQLite:**](https://github.com/crizulm/sqlite3/blob/master/download/sqlite.zip) Es nuestro sistema de gestion de base de datos que mencionamos anteriormente.
+ - [**Netbeans IDE:**](https://netbeans.org/downloads/index.html) Como ya se sabe, Netbeans es un entorno de desarrollo que nos facilita la ejecución, depuración, y escritura de nuestro código.
+ - [**SQLite:**](https://github.com/crizulm/sqlite3/blob/master/download/sqlite.zip) Es nuestro sistema de gestión de base de datos que mencionamos anteriormente.
  - [**JDBC (Java Database Conectivity):**](https://github.com/crizulm/sqlite3/blob/master/download/sqlite-jdbc-3.20.0.jar.zip) Es una API que permite la ejecución de operaciones sobre nuestra base de datos desde Java, es la que ira a "hablar" con nuestra base de datos.
 
 Para descargar estas herramientas simplemente basta hacer click encima del titulo de cada una, o en caso contrario hacer [click aqui](https://github.com/crizulm/sqlite3/blob/master/download) para ver todos las descargas.
 
-> **Aclaración:** Todas estas herramientas ya se encuentran instaladas en las maquinas del laboratorio que iremos a desarollar esta guia.
+> **Aclaración:** Todas estas herramientas ya se encuentran instaladas en las maquinas del laboratorio que iremos a desarrollar esta guía.
 
 ## ¿Como iremos a trabajar?
 
 ![](https://github.com/crizulm/sqlite3/blob/master/img/arq.png)
 
-Como se puede ver en la imagen superior, la arquitectura sobre la cual estaremos trabajando, nuestra aplicacion **Java** intercambia mensajes con **JDBC**, y este le envia nuestros mensajes a nuestra base de datos **SQLite**.
+Como se puede ver en la imagen superior, la arquitectura sobre la cual estaremos trabajando, nuestra aplicación **Java** intercambia mensajes con **JDBC**, y este le envía nuestros mensajes a nuestra base de datos **SQLite**.
 
 Bueno, ahora que ya tenemos todas las herramientas necesarias y sabemos como funciona la arquitectura sobre la cual vamos a trabajar, nos ponemos manos a la obra y a trabajar :stuck_out_tongue_winking_eye:.
 
 ## Comienzo de la guia de trabajo
 
 ## ¿Que nos pidieron?
-Una veterinaria muy popular de la ciudad la cual atiende muchos animales, entre ellos perros :dog: nos solicito que desarollemos una aplicacion.
+Una veterinaria muy popular de la ciudad la cual atiende muchos animales, entre ellos perros :dog: nos solicito que desarrollemos una aplicación.
 
  - **Guardar perrros:** Nos pidieron que guardemos cada perro que es atendido por ellos, de cada uno de ellos les interesa su numero de chip, su nombre, su raza.
-  - **Listar perros:** Tambien nos solicitan que seamos capaces de mostrar todos los perros que se han guardado, mostrando cada uno de sus datos.
-  - **Listar perros ordenados por raza:** Tambien les interesa tener la posibilidad de ver todos los perros ordenados por raza.
+  - **Listar perros:** También nos solicitan que seamos capaces de mostrar todos los perros que se han guardado, mostrando cada uno de sus datos.
+  - **Listar perros ordenados por raza:** También les interesa tener la posibilidad de ver todos los perros ordenados por raza.
   
 ## Desarollando nuestra aplicación
 ### Creando nuestro proyecto
@@ -93,7 +93,7 @@ public class Perro {
 ```
 
 ### Importando la libreria JDBC
-Como dijimos para que nuestra aplicacion Java se conecte con nuestra base de datos necesitamos importar la libreria JDBC que descargamos anteriormente, asi que antes de empezar con la sección de codigo donde nuestra aplicacion se conectara con la base de datos debemos realizar los siguientes pasos.
+Como dijimos para que nuestra aplicación Java se conecte con nuestra base de datos necesitamos importar la librería JDBC que descargamos anteriormente, así que antes de empezar con la sección de código donde nuestra aplicación se conectara con la base de datos debemos realizar los siguientes pasos.
 
 1. Crear directorio **"libs"** en la carpeta de nuestro proyecto.
 2. Copiar el archivo **"sqlite-jdbc-[****].jar"** dentro del directorio que creamos.
@@ -102,12 +102,12 @@ Como dijimos para que nuestra aplicacion Java se conecte con nuestra base de dat
 
 ![](https://github.com/crizulm/sqlite3/blob/master/img/libraryScren.png)
 
-Listo :+1:, en nuestro proyecto deberia aparecer la libreria que acabamos de agregar como se muestra arriba.
+Listo :+1:, en nuestro proyecto debería aparecer la librería que acabamos de agregar como se muestra arriba.
 
 ### Creando nuestra clase Conexion
-Ahora que ya tenemos la libreria JDBC importada, pasaremos a crear la clase **Conexion** ; esta clase sera la encargada de conectarse, desconectarse, asi como insertar y eliminar los perros a nuestra base de datos.
+Ahora que ya tenemos la librería JDBC importada, pasaremos a crear la clase **Conexion** ; esta clase sera la encargada de conectarse, desconectarse, así como insertar y eliminar los perros a nuestra base de datos.
 
-Lo primero que debemos definir de esta clase sera los atributos que tendremos en esta, vamos a tener un **String** que repesenta la ruta donde estara ubicada nuestra base de datos y un objeto **Connection** que va a ser el punto de entrada a nuestra base de datos.
+Lo primero que debemos definir de esta clase sera los atributos que tendremos en esta, vamos a tener un **String** que representa la ruta donde estará ubicada nuestra base de datos y un objeto **Connection** que va a ser el punto de entrada a nuestra base de datos.
 
 ```Java
 public class Conexion {
@@ -120,7 +120,7 @@ public class Conexion {
 }
 ```
 
-Ahora debemos agregar un metodo **conectar()** y un metodo **cerrar()**, estos se encargaran de abrir la conexion con la base de datos y cerrarla.
+Ahora debemos agregar un método **conectar()** y un metodo **cerrar()**, estos se encargaran de abrir la conexión con la base de datos y cerrarla.
 
 ```Java
 private void conectar() throws SQLException{
@@ -132,10 +132,10 @@ private void cerrar() throws SQLException{
 }
 ```
 
-> **Nota:** Como se puede observar el codigo esta sujeto a mejoras, ya que podriamos añadir un manejo de excepciones que no lo estamos haciendo.
+> **Nota:** Como se puede observar el código esta sujeto a mejoras, ya que podríamos añadir un manejo de excepciones que no lo estamos haciendo.
 
-Lo que hace el primer metodo es simplemente instanciar un objeto del tipo **Connection**, y para esto su constructor recibe como parametro el tipo de base de datos que estamos usando (en este caso SQLite), asi como la ruta de donde guardaremos esta base de datos. Y el segundo metodo simplemente cierra la conexion.
-Con esto ya podriamos conectarnos a nuestra base de datos yeahh :smiley:.
+Lo que hace el primer método es simplemente instanciar un objeto del tipo **Connection**, y para esto su constructor recibe como parametro el tipo de base de datos que estamos usando (en este caso SQLite), asi como la ruta de donde guardaremos esta base de datos. Y el segundo método simplemente cierra la conexión.
+Con esto ya podríamos conectarnos a nuestra base de datos yeah :smiley:.
 
 ### Creando nuestra Tabla Perros
 
