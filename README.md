@@ -16,7 +16,7 @@ Antes de comenzar a trabajar con SQLite vamos a mencionar lo que debemos tener i
  - [**SQLite:**](https://github.com/crizulm/sqlite3/blob/master/download/sqlite.zip) Es nuestro sistema de gestión de base de datos que mencionamos anteriormente.
  - [**JDBC (Java Database Conectivity):**](https://github.com/crizulm/sqlite3/blob/master/download/sqlite-jdbc-3.20.0.jar.zip) Es una API que permite la ejecución de operaciones sobre nuestra base de datos desde Java, es la que ira a "hablar" con nuestra base de datos.
 
-Para descargar estas herramientas simplemente basta hacer click encima del titulo de cada una, o en caso contrario hacer [click aqui](https://github.com/crizulm/sqlite3/blob/master/download) para ver todos las descargas.
+Para descargar estas herramientas simplemente basta hacer clic encima del titulo de cada una, o en caso contrario hacer [click aquí](https://github.com/crizulm/sqlite3/blob/master/download) para ver todos las descargas.
 
 > **Aclaración:** Todas estas herramientas ya se encuentran instaladas en las maquinas del laboratorio que iremos a desarrollar esta guía.
 
@@ -28,25 +28,25 @@ Como se puede ver en la imagen superior, la arquitectura sobre la cual estaremos
 
 Bueno, ahora que ya tenemos todas las herramientas necesarias y sabemos como funciona la arquitectura sobre la cual vamos a trabajar, nos ponemos manos a la obra y a trabajar :stuck_out_tongue_winking_eye:.
 
-## Comienzo de la guia de trabajo
+## Comienzo de la guía de trabajo
 
 ## ¿Que nos pidieron?
 Una veterinaria muy popular de la ciudad la cual atiende muchos animales, entre ellos perros :dog: nos solicito que desarrollemos una aplicación.
 
- - **Guardar perrros:** Nos pidieron que guardemos cada perro que es atendido por ellos, de cada uno de ellos les interesa su numero de chip, su nombre, su raza.
+ - **Guardar perros:** Nos pidieron que guardemos cada perro que es atendido por ellos, de cada uno de ellos les interesa su numero de chip, su nombre, su raza.
   - **Listar perros:** También nos solicitan que seamos capaces de mostrar todos los perros que se han guardado, mostrando cada uno de sus datos.
   - **Listar perros ordenados por raza:** También les interesa tener la posibilidad de ver todos los perros ordenados por raza.
   
-## Desarollando nuestra aplicación
+## Desarrollando nuestra aplicación
 ### Creando nuestro proyecto
-Para el desarollo de la aplicacion, nuestro primer paso sera crear un proyecto de consola en Netbeans.
+Para el desarrollo de la aplicación, nuestro primer paso será crear un proyecto de consola en Netbeans.
 1. Irnos a <kbd>File->New Proyect</kbd>.
 2. Seleccionar Java Application y clickear <kbd>Next</kbd>.
 3. Introducir el nombre de nuestro proyecto y la carpeta donde lo iremos a guardar y clickear <kbd>Finish</kbd>
 
 ### Creando nuestra clase Perro
 
-Luego de crear el proyecto pasaremos a modelar nuestro problema, para ello tendremos que crear la clase **Perro**, ya sabemos que atributos tendra esta.
+Luego de crear el proyecto pasaremos a modelar nuestro problema, para ello tendremos que crear la clase **Perro**, ya sabemos que atributos tendrá esta.
 Nuestra clase quedara muy parecida a esta:
 
 ```Java
@@ -92,7 +92,7 @@ public class Perro {
 }
 ```
 
-### Importando la libreria JDBC
+### Importando la librería JDBC
 Como dijimos para que nuestra aplicación Java se conecte con nuestra base de datos necesitamos importar la librería JDBC que descargamos anteriormente, así que antes de empezar con la sección de código donde nuestra aplicación se conectara con la base de datos debemos realizar los siguientes pasos.
 
 1. Crear directorio **"libs"** en la carpeta de nuestro proyecto.
@@ -104,10 +104,10 @@ Como dijimos para que nuestra aplicación Java se conecte con nuestra base de da
 
 Listo :+1:, en nuestro proyecto debería aparecer la librería que acabamos de agregar como se muestra arriba.
 
-### Creando nuestra clase Conexion
-Ahora que ya tenemos la librería JDBC importada, pasaremos a crear la clase **Conexion** ; esta clase sera la encargada de conectarse, desconectarse, así como insertar y eliminar los perros a nuestra base de datos.
+### Creando nuestra clase Conexión
+Ahora que ya tenemos la librería JDBC importada, pasaremos a crear la clase **Conexión** ; esta clase será la encargada de conectarse, desconectarse, así como insertar y eliminar los perros a nuestra base de datos.
 
-Lo primero que debemos definir de esta clase sera los atributos que tendremos en esta, vamos a tener un **String** que representa la ruta donde estará ubicada nuestra base de datos y un objeto **Connection** que va a ser el punto de entrada a nuestra base de datos.
+Lo primero que debemos definir de esta clase será los atributos que tendremos en esta, vamos a tener un **String** que representa la ruta donde estará ubicada nuestra base de datos y un objeto **Connection** que va a ser el punto de entrada a nuestra base de datos.
 
 ```Java
 public class Conexion {
@@ -120,7 +120,7 @@ public class Conexion {
 }
 ```
 
-Ahora debemos agregar un método **conectar()** y un metodo **cerrar()**, estos se encargaran de abrir la conexión con la base de datos y cerrarla.
+Ahora debemos agregar un método **conectar()** y un método **cerrar()**, estos se encargaran de abrir la conexión con la base de datos y cerrarla.
 
 ```Java
 private void conectar() throws SQLException{
@@ -134,7 +134,7 @@ private void cerrar() throws SQLException{
 
 > **Nota:** Como se puede observar el código esta sujeto a mejoras, ya que podríamos añadir un manejo de excepciones que no lo estamos haciendo.
 
-Lo que hace el primer método es simplemente instanciar un objeto del tipo **Connection**, y para esto su constructor recibe como parametro el tipo de base de datos que estamos usando (en este caso SQLite), asi como la ruta de donde guardaremos esta base de datos. Y el segundo método simplemente cierra la conexión.
+Lo que hace el primer método es simplemente instanciar un objeto del tipo **Connection**, y para esto su constructor recibe como parámetro el tipo de base de datos que estamos usando (en este caso SQLite), asi como la ruta de donde guardaremos esta base de datos. Y el segundo método simplemente cierra la conexión.
 Con esto ya podríamos conectarnos a nuestra base de datos yeah :smiley:.
 
 ### Creando nuestra Tabla Perros
@@ -160,10 +160,10 @@ private void crearTablaPerrosSiNoExiste() throws SQLException{
 }
 ```
 
-Lo que hacemos es simplementar abrir la conexion con nuestra base de datos, luego preparamos una sentencia que contiene una consulta en lenguaje SQL, esta consulta esta diciendo que queremos crear una tabla que se llame **Perros** si no existe (de lo contrario no se crea), y ademas que tiene como columnas un atributo **chip** (entero), un **nombre** (texto), una **raza** (texto).
-Ademas estamos diciendo que **chip** es <kbd>PRIMARY KEY</kbd> esto quiere decir que no pueden haber dos filas con el mismo **chip**, esto tiene sentido ya que este es unico para cada perro.
+Lo que hacemos es simplemente abrir la conexión con nuestra base de datos, luego preparamos una sentencia que contiene una consulta en lenguaje SQL, esta consulta esta diciendo que queremos crear una tabla que se llame **Perros** si no existe (de lo contrario no se crea), y además que tiene como columnas un atributo **chip** (entero), un **nombre** (texto), una **raza** (texto).
+Además estamos diciendo que **chip** es <kbd>PRIMARY KEY</kbd> esto quiere decir que no pueden haber dos filas con el mismo **chip**, esto tiene sentido ya que este es único para cada perro.
 
-Asi que ahora deberiamos agregar una llamada a este metodo en nuestro constructor de la clase Conexion, ya que si no existe la tabla la deberiamos crear.
+Así que ahora deberíamos agregar una llamada a este método en nuestro constructor de la clase Conexión, ya que si no existe la tabla la deberíamos crear.
 
 ```Java
 public Conexion(String unaRutaArchivoBD) throws SQLException{
@@ -173,7 +173,7 @@ public Conexion(String unaRutaArchivoBD) throws SQLException{
 ```
 
 ### Insertando objetos
-Ahora que ya tenemos nuestra tabla donde guardar nuestros Perros, podemos crear un metodo que inserte estos en la base de datos.
+Ahora que ya tenemos nuestra tabla donde guardar nuestros Perros, podemos crear un método que inserte estos en la base de datos.
 
 ```Java
 public void guardarPerro(Perro unPerro) throws SQLException{
@@ -188,10 +188,10 @@ public void guardarPerro(Perro unPerro) throws SQLException{
 }
 ```
 
-Lo que vamos hacer es abrir la conexion, como lo hicimos en el metodo anterior, para luego crear una sentencia; esta lo que hace es insertar una nueva fila en la tabla y se le especifica los valores que tomara cada columna mediante el metodo **"setString"**, para finalmente con el metodo **"execute()"** realizar la insercion.
+Lo que vamos hacer es abrir la conexión, como lo hicimos en el método anterior, para luego crear una sentencia; esta lo que hace es insertar una nueva fila en la tabla y se le especifica los valores que tomara cada columna mediante el método **"setString"**, para finalmente con el método **"execute()"** realizar la inserción.
 
 ### Obtener objetos
-Con este metodo lo que vamos a lograr es poder obtener todos los Perros que tenemos guardados en nuestra base de datos, para eso simplemente realizamos la consulta SQL **"SELECT * FROM Perros"**, esta nos retorna un objeto del tipo **ResultSet** sobre el cual iremos a iterar para obtener una fila de la tabla, para luego crear un objeto Perro y agregarlo al ArrayList que iremos a retornar.
+Con este método lo que vamos a lograr es poder obtener todos los Perros que tenemos guardados en nuestra base de datos, para eso simplemente realizamos la consulta SQL **"SELECT * FROM Perros"**, esta nos retorna un objeto del tipo **ResultSet** sobre el cual iremos a iterar para obtener una fila de la tabla, para luego crear un objeto Perro y agregarlo al ArrayList que iremos a retornar.
 
 ```Java
 public ArrayList<Perro> obtenerPerros() throws SQLException{
@@ -211,8 +211,8 @@ public ArrayList<Perro> obtenerPerros() throws SQLException{
 }
 ```
 ### Creando nuestra clase Prueba
-Ahora ya tenemos todo, solamente debemos crear nuestra clase Prueba para ofrecer un menu desde el cual puedamos cumplir con los requerimientos que nos solicito la veterinaria.
-Nuestra clase Prueba tendra un **main**, donde iremos a mostrar las opciones disponibles.
+Ahora ya tenemos todo, solamente debemos crear nuestra clase Prueba para ofrecer un menú desde el cual podamos cumplir con los requerimientos que nos solicito la veterinaria.
+Nuestra clase Prueba tendrá un **main**, donde iremos a mostrar las opciones disponibles.
 
 ```Java
 public static void main(String[] args) throws SQLException, IOException{
@@ -242,7 +242,7 @@ public static void main(String[] args) throws SQLException, IOException{
 }
 ```
 
-Ahora debemos crear nuestros metodos **pedirDatos()** y **mostrarPerros()**, estos se encargaran de guardar un nuevo perro y mostrar todos los perros.
+Ahora debemos crear nuestros métodos **pedirDatos()** y **mostrarPerros()**, estos se encargaran de guardar un nuevo perro y mostrar todos los perros.
 
 ```Java
 private static void pedirDatos() throws SQLException{
@@ -258,7 +258,7 @@ private static void pedirDatos() throws SQLException{
      unaConexion.guardarPerro(unPerro);
  }
 ```
-Como se puede lo unico que hacemos es pedir los datos mediante un Scanner para luego crear una **Conexion**, pasandole al constructor la ruta del fichero donde estara nuestra base de datos, para luego llamar al metodo **guardarPerro** que creamos anteriormente.
+Como se puede lo único que hacemos es pedir los datos mediante un Scanner para luego crear una **Conexión**, pasándole al constructor la ruta del fichero donde estará nuestra base de datos, para luego llamar al método **guardarPerro** que creamos anteriormente.
 
 ```Java
 private static void mostrarPerros() throws SQLException{
@@ -271,14 +271,14 @@ private static void mostrarPerros() throws SQLException{
      }
 }
 ```
-De manera similar al anterior, creamos una **Conexion** para luego llamar al metodo **obtenerPerros** que nos retorna un ArrayList<Perro> que luego iremos a iterar para mostrar los perros.
+De manera similar al anterior, creamos una **Conexión** para luego llamar al método **obtenerPerros** que nos retorna un ArrayList<Perro> que luego iremos a iterar para mostrar los perros.
  
 ### Opcional
-Queda como ejercicio crear un metodo para listar los perros ordenados por raza.
+Queda como ejercicio crear un método para listar los perros ordenados por raza.
 
-> **Sugerencia:** Se recomienda utilizar el metodo **obtenerPerros()** de nuestra clase **Conexion**, para luego ordenar.
+> **Sugerencia:** Se recomienda utilizar el método **obtenerPerros()** de nuestra clase **Conexión**, para luego ordenar.
 
-## Autoria
+## Autoría
 Autor: Matias Crizul
 E-mail: crizulm@gmail.com
 
