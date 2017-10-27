@@ -51,6 +51,12 @@ Para agregar una nueva fila debemos clickear sobre el boton <kbd>New Record</kbd
 Por ultimo igualmente que como cuando editamos una fila debemos clickear el boton <kbd>Write Changes</kbd> para guardar los cambios.
 
 ### Borrando filas
+Para borrar una nueva fila debemos seleccionar la fila que queremos eliminar, y luego clickear sobre el boton <kbd>Delete Record</kbd> que se encuentra en la esquina superior izquierda.
+
+![](./img/dbbrowser-delete.png)
+
+Al igual que todos los demas casos debemos clickear el boton <kbd>Write Changes</kbd>
+
 ## Autoría
 **Autor:** Matias Crizul
 
