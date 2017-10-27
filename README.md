@@ -279,8 +279,9 @@ Queda como ejercicio crear un método para listar los perros ordenados por raza.
 > **Sugerencia:** Se recomienda utilizar el método **obtenerPerros()** de nuestra clase **Conexión**, para luego ordenar.
 
 ## Autoría
-Autor: Matias Crizul
-E-mail: crizulm@gmail.com
+**Autor:** Matias Crizul
+
+**E-mail:** crizulm@gmail.com
 
 Si tienes preguntas sobre éste tema, no dudes en mandarme un correo electrónico.
 
