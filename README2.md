@@ -1,4 +1,4 @@
-![](./img/db-browser.png)
+![](./img/logo2.png)
 
 ## DBBrowser para SQLite
 
