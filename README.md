@@ -1,4 +1,4 @@
-![](img/logo.jpg)
+![](./img/logo.jpg)
 
 ## ¿Que es SQLite?
 
@@ -13,16 +13,16 @@ Así que a continuación iremos a desarrollar una guía de como instalar nuestra
 Antes de comenzar a trabajar con SQLite vamos a mencionar lo que debemos tener instalado en nuestra maquina, y explicar que función cumple cada uno de estos.
 
  - [**Netbeans IDE:**](https://netbeans.org/downloads/index.html) Como ya se sabe, Netbeans es un entorno de desarrollo que nos facilita la ejecución, depuración, y escritura de nuestro código.
- - [**SQLite:**](https://github.com/crizulm/sqlite3/blob/master/download/sqlite.zip) Es nuestro sistema de gestión de base de datos que mencionamos anteriormente.
- - [**JDBC (Java Database Conectivity):**](https://github.com/crizulm/sqlite3/blob/master/download/sqlite-jdbc-3.20.0.jar.zip) Es una API que permite la ejecución de operaciones sobre nuestra base de datos desde Java, es la que ira a "hablar" con nuestra base de datos.
+ - [**SQLite:**](download/sqlite.zip) Es nuestro sistema de gestión de base de datos que mencionamos anteriormente.
+ - [**JDBC (Java Database Conectivity):**](./download/sqlite-jdbc-3.20.0.jar.zip) Es una API que permite la ejecución de operaciones sobre nuestra base de datos desde Java, es la que ira a "hablar" con nuestra base de datos.
 
-Para descargar estas herramientas simplemente basta hacer clic encima del titulo de cada una, o en caso contrario hacer [click aquí](https://github.com/crizulm/sqlite3/blob/master/download) para ver todos las descargas.
+Para descargar estas herramientas simplemente basta hacer clic encima del titulo de cada una, o en caso contrario hacer [click aquí](./download) para ver todos las descargas.
 
 > **Aclaración:** Todas estas herramientas ya se encuentran instaladas en las maquinas del laboratorio que iremos a desarrollar esta guía.
 
 ## ¿Como iremos a trabajar?
 
-![](https://github.com/crizulm/sqlite3/blob/master/img/arq.png)
+![](./img/arq.png)
 
 Como se puede ver en la imagen superior, la arquitectura sobre la cual estaremos trabajando, nuestra aplicación **Java** intercambia mensajes con **JDBC**, y este le envía nuestros mensajes a nuestra base de datos **SQLite**.
 
