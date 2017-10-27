@@ -280,11 +280,11 @@ Queda como ejercicio crear un método para listar los perros ordenados por raza.
 > **Sugerencia:** Se recomienda utilizar el método **obtenerPerros()** de nuestra clase **Conexión**, para luego ordenar.
 
 ## Guia de trabajo DBBrowser
-Tambien existen software como **DBBrowser** que nos permite explorar nuestra base de datos, es decir nos permite agregar, editar y eliminar filas.
-Queda como ejercicio tambien realizar la guia de trabajo de este software, [**click aqui**](./README2.md) para abrir.
+También existen software como **DBBrowser** que nos permite explorar nuestra base de datos, es decir nos permite agregar, editar y eliminar filas.
+Queda como ejercicio también realizar la guía de trabajo de este software, [click aquí](./README2.md) para abrir.
 
 ## Autoría
-**Autor:** Matias Crizul
+**Autor:** Matías Crizul
 
 **E-mail:** crizulm@gmail.com
 
