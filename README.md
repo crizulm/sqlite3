@@ -273,13 +273,13 @@ private static void mostrarPerros() throws SQLException{
 ```
 De manera similar al anterior, creamos una **Conexión** para luego llamar al método **obtenerPerros** que nos retorna un ArrayList<Perro> que luego iremos a iterar para mostrar los perros.
  
-### Opcional
-#### Ejercicio
+## Extra
+### Ejercicio
 Queda como ejercicio crear un método para listar los perros ordenados por raza.
 
 > **Sugerencia:** Se recomienda utilizar el método **obtenerPerros()** de nuestra clase **Conexión**, para luego ordenar.
 
-#### Guia de trabajo DBBrowser
+### Guia de trabajo DBBrowser
 También existen software como **DBBrowser** que nos permite explorar nuestra base de datos, es decir nos permite agregar, editar y eliminar filas.
 Queda como ejercicio también realizar la guía de trabajo de este software, [click aquí](./README2.md) para abrir.
 
