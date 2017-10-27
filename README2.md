@@ -8,7 +8,7 @@ Así que a continuación iremos a desarollar una guia de como utilizar este soft
 
 ## ¿Que necesitamos para trabajar?
 
- - [**DBBrowser:**](http://sqlitebrowser.org)
+ - [**DBBrowser**](http://sqlitebrowser.org)
 
 Para descargar esta herramienta simplemente basta hacer clic encima del titulo, en la pagina oficial del desarollador se encuentran todas las versiones tanto para Windows, Mac OS X, como Linux o en caso contrario hacer [click aquí](./download) para ver todos las descargas.
 
@@ -18,7 +18,7 @@ Para descargar esta herramienta simplemente basta hacer clic encima del titulo, 
 
 Antes que nada debemos ejecutar la aplicacion, y nos encontraremos con una interfaz similar a la siguiente:
 
-![](./img/dbbrowser.jpg)
+![](./img/db-browser.png)
 
 Ahora debemos abrir el archivo que contiene nuestra base de datos, para ellos debemos:
 1. Irnos a <kbd>File->Open Database</kbd>.
