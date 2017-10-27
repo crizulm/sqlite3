@@ -1,4 +1,4 @@
-![](./img/dbbrowser.png)
+![](./img/db-browser.png)
 
 ## DBBrowser para SQLite
 
@@ -29,7 +29,7 @@ Ahora desde la pestaña superior <kbd>Database Structure</kbd> podemos explorar 
 Pero nos interesa editar la información que guarda nuestra base de datos para luego ver si esta se ve reflejada en la aplicación que creamos anteriormente.
 Para ello debemos dirigirnos a la pestaña <kbd>Browse Data</kbd>.
 
-![](./img/dbbrowser-browse-data.png)
+![](./img/db-browser-browse-data.png)
 
 Deberiamos ver una ventana similar a la anterior, en esta ventana podremos agregar, editar, y borrar filas de nuestra tabla manualmente; a continuación vamos a explicar como realizar cada una de estas acciones.
 
