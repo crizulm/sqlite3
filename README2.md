@@ -10,7 +10,7 @@ Así que a continuación iremos a desarollar una guia de como utilizar este soft
 
  - [**DBBrowser**](http://sqlitebrowser.org)
 
-Para descargar esta herramienta simplemente basta hacer clic encima del titulo, en la pagina oficial del desarrollador se encuentran todas las versiones tanto para Windows, Mac OS X, como Linux o en caso contrario hacer [click aquí](./download) para ver todos las descargas.
+Para descargar esta herramienta simplemente basta hacer clic encima del titulo, en la pagina oficial del desarrollador se encuentran todas las versiones tanto para Windows, Mac OS X, como Linux o en caso contrario hacer [click aquí](https://github.com/crizulm/sqlite3/tree/shortWorkGuide/download) para ver todos las descargas.
 
 > **Aclaración:** Todas estas herramientas ya se encuentran instaladas en las maquinas del laboratorio que iremos a desarrollar esta guía.
 
