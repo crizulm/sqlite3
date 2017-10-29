@@ -1,5 +1,17 @@
 ![](./img/logo.jpg)
 
+## ¿Que necesitamos para trabajar?
+
+Antes de comenzar a trabajar con SQLite vamos a mencionar lo que debemos tener instalado en nuestra maquina, y explicar que función cumple cada uno de estos.
+
+ - [**Netbeans IDE:**](https://netbeans.org/downloads/index.html) Como ya se sabe, Netbeans es un entorno de desarrollo que nos facilita la ejecución, depuración, y escritura de nuestro código.
+ - [**SQLite:**](download/sqlite.zip) Es nuestro sistema de gestión de base de datos que mencionamos anteriormente.
+ - [**JDBC (Java Database Conectivity):**](./download/sqlite-jdbc-3.20.0.jar.zip) Es una API que permite la ejecución de operaciones sobre nuestra base de datos desde Java, es la que ira a "hablar" con nuestra base de datos.
+
+Para descargar estas herramientas simplemente basta hacer clic encima del titulo de cada una, o en caso contrario hacer [click aquí](./download) para ver todos las descargas.
+
+> **Aclaración:** Todas estas herramientas ya se encuentran instaladas en las maquinas del laboratorio que iremos a desarrollar esta guía.
+
 ## Comienzo de la guía de trabajo
 
 ## ¿Que nos pidieron?
