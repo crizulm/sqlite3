@@ -6,6 +6,15 @@ DB Browser para SQLite es un software open source que nos permite crear, diseña
 
 Así que a continuación iremos a desarollar una guia de como utilizar este software para explorar la base de datos que creamos anteriormente.
 
+## ¿Que necesitamos para trabajar?
+
+ - [**DBBrowser**](http://sqlitebrowser.org)
+
+Para descargar esta herramienta simplemente basta hacer clic encima del titulo, en la pagina oficial del desarrollador se encuentran todas las versiones tanto para Windows, Mac OS X, como Linux o en caso contrario hacer [click aquí](./download) para ver todos las descargas.
+
+> **Aclaración:** Todas estas herramientas ya se encuentran instaladas en las maquinas del laboratorio que iremos a desarrollar esta guía.
+
+
 ## Comienzo de la guía de trabajo
 
 Antes que nada debemos ejecutar la aplicacion, y nos encontraremos con una interfaz similar a la siguiente:
