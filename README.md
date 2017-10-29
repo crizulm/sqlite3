@@ -80,14 +80,14 @@ public class Perro {
     }
     
     public Perro(int unChip, String unNombre, String unaRaza){
-        setChip(unChip);
-        setNombre(unNombre);
-        setRaza(unaRaza);
+        this.setChip(unChip);
+        this.setNombre(unNombre);
+        this.setRaza(unaRaza);
     }
     
     @Override
     public String toString(){
-        return "Chip: " + getChip() + " - Nombre: " + getNombre() + " - Raza: " + getRaza();
+        return "Chip: " + this.getChip() + " - Nombre: " + this.getNombre() + " - Raza: " + this.getRaza();
     }
 }
 ```
